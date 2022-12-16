@@ -34,7 +34,13 @@ public class LogicFor {
         // proses menampilkan
         for (int b = 0; b < n; b++) {
             for (int k = 0; k < n; k++) {
-                System.out.print(deret[b][k]+"\t\t");
+
+                System.out.print(deret[b][k] + "\t\t");
+                /*if (b <= k) {
+                    System.out.print(deret[b][k] + "\t\t");
+                } else {
+                    System.out.print("\t\t");
+                }*/
             }
             System.out.println("\n");
         }
