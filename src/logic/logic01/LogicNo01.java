@@ -17,6 +17,13 @@ public class LogicNo01 {
         soalNo02C(9);
         soalNo02D(9);
         soalNo02E(9);
+        soalNo03A(9);
+        soalNo03B(9);
+        soalNo03C(9);
+        soalNo03D(9);
+        soalNo03E(9);
+        soalNo04A(9);
+        soalNo05A(9);
 
         //soalNo10(9);
     }
@@ -185,6 +192,111 @@ public class LogicNo01 {
         }
         System.out.println("\n=================================");
     }
+
+    public static void soalNo03A(int n) {
+
+        System.out.println("Soal No 3 A");
+
+        int hasil = 0;
+        int[] deret = new int[n];
+
+        for (int i = 0; i < deret.length; i++) {
+            System.out.print(hasil+"\t");
+            hasil = hasil + 2;
+        }
+        System.out.println();
+    }
+
+    public static void soalNo03B(int n) {
+
+        System.out.println("Soal No 3 B");
+
+        int hasil = 0;
+        int[] deret = new int[n];
+
+        for (int a = 0; a < deret.length; a++) {
+            System.out.print(hasil+"\t");
+            hasil = hasil + 2;
+        }
+        System.out.println();
+    }
+
+    public static void soalNo03C(int n) {
+
+        System.out.println("Soal No 3 C");
+
+        int hasil = 0;
+        int[] deret = new int[n];
+
+        for (int b = 0; b < deret.length; b++) {
+            System.out.print(hasil+"\t");
+            hasil = hasil + 2;
+        }
+        System.out.println();
+    }
+
+    public static void soalNo03D(int n) {
+
+        System.out.println("Soal No 3 D");
+
+        int hasil = 0;
+        int[] deret = new int[n];
+
+        for (int c = 0; c < deret.length; c++) {
+            System.out.print(hasil+"\t");
+            hasil = hasil + 2;
+        }
+        System.out.println();
+    }
+
+    public static void soalNo03E(int n) {
+
+        System.out.println("Soal No 3 E");
+
+        int hasil = 0;
+        int[] deret = new int[n];
+
+        for (int d = 0; d < deret.length; d++) {
+            System.out.print(hasil+"\t");
+            hasil = hasil + 2;
+        }
+        System.out.println("\n=================================");
+    }
+
+    public static void soalNo04A(int n) {
+
+        System.out.println("Soal No 4 A");
+
+        int[] deret = new int[n];
+
+        for (int i = 0; i < deret.length; i++) {
+            if (i == 0 || i == 1) {
+                deret[i] = 1;
+                System.out.print(deret[i]+"\t");
+            } else {
+                deret[i] = deret[i-1] + deret[i-2];
+                System.out.print(deret[i]+"\t");
+            }
+        }
+    }
+
+    public static void soalNo05A(int n) {
+
+        System.out.println("\nSoal No 05 A");
+
+        int[] deret = new int[n];
+
+        for (int i = 0; i < deret.length; i++) {
+            if (i == 0 || i == 1 || i == 2) {
+                deret[i] = 1;
+                System.out.print(deret[i]+"\t");
+            } else {
+                deret[i] = deret[i-1] + deret[i-2] + deret[i-3];
+                System.out.print(deret[i]+"\t");
+            }
+        }
+    }
+
     public static void soalNo08(int n){
         String[] deret = new String[n];
         char huruf = 'A';
