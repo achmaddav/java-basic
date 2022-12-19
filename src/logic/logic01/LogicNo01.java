@@ -280,6 +280,42 @@ public class LogicNo01 {
         }
     }
 
+    public static void soalNo04B(int n) {
+
+        System.out.println("Soal No 4 B");
+
+        int[] deret = new int[n];
+
+        for (int a = 0; a < deret.length; a++) {
+            if (a == 0 || a == 1) {
+                deret[a] = 1;
+                System.out.print(deret[a]+"\t");
+            } else {
+                deret[a] = deret[a-1] + deret[a-2];
+                System.out.print(deret[a]+"\n");
+            }
+        }
+        System.out.println();
+    }
+
+    public static void soalNo04C(int n) {
+
+        System.out.println("Soal No 4 C");
+
+        int[] deret = new int[n];
+
+        for (int b = 0; b < deret.length; b++) {
+            if (b == 0 || b== 1) {
+                deret[b] = 1;
+                System.out.print(deret[b]+"\t");
+            } else {
+                deret[b] = deret[b-1] + deret[b-2];
+                System.out.print(deret[b]+"\t");
+            }
+        }
+        System.out.println();
+    }
+
     public static void soalNo05A(int n) {
 
         System.out.println("\nSoal No 05 A");
