@@ -7,7 +7,7 @@ import java.sql.SQLOutput;
 
 public class LogicNo01 {
     public static void main(String[] args) {
-        soalNo01A(9);
+        //soalNo01A(9);
         soalNo01B(9);
         soalNo01C(9);
         soalNo01D(9);
